@@ -1,0 +1,472 @@
+@import url(common.css);
+#wrap{color:#999}
+
+/* header______________________________________________ */
+
+header{
+  width:100%;
+  background-color:#E4E9F2;
+}
+header .util{
+  width:1200px;
+  height:15px;
+  margin:0 auto;
+}
+.util ul{float:right;}
+.util ul li{
+  float:left;
+  padding:0 10px;
+  font-size:13px;
+  border-left:1px solid #666;
+}
+.util ul li:first-child{
+  border-left:0;
+}
+.util ul li:hover{
+  color:#590212;
+  font-weight:bold;
+}
+.gnb{
+  width:100%;
+  background-color:#E4E9F2;
+  display:inline-block;
+}
+.gnb_in{
+  width:1200px;
+  height:110px;
+  margin:0 auto;
+}
+.gnb_in img{
+  float:left;
+  margin-top:30px;
+}
+.gnb_in .nav{float:right;}
+.gnb_in .nav u{
+  display:inline-block;}
+.gnb_in .nav ul li{
+  width:100px;
+  float:left;
+  line-height:100px;
+  text-align:center;
+  transition:all 0.3s;
+}
+.gnb_in .nav ul li a{
+  font-weight:bold;
+  font-size:16px;
+}
+.gnb_in .nav ul li:hover{
+  background-color:#590212;
+  border-radius:50px;
+}
+.gnb_in .nav ul li:hover a{
+  color:#fff;
+  font-family:'Nanum Pen Script', cursive;
+  font-size:23px;
+  text-shadow:5px 10px 10px #fff;
+}
+
+/* visual______________________________________________ */
+.visual{
+  width:100%;
+  background:#A63F03;
+}
+.vimg{
+  width:1200px;
+  height:560px;
+  margin:0 auto;
+  background:url(../image/visual_1.png) no-repeat;
+  transition:all 0.5s;
+  text-align: center;
+  position:relative;
+}
+.vimg .arrow_left{
+  font-size:80px;
+  line-height:560px;
+  position:absolute;
+  text-shadow:5px 5px 5px #590212;
+  left:50px;
+  color:#590212;
+}
+.vimg .arrow_right{
+  font-size:80px;
+  line-height:560px;
+  position:absolute;
+  text-shadow:5px 5px 5px #590212;
+  right:50px;
+  color:#590212;
+}
+.vimg:hover{
+  width:1200px;
+  height:560px;
+  background:url(../image/visual_2.png) no-repeat;
+  cursor:pointer;
+}
+
+/* section______________________________________________ */
+section h2{
+  font-size:48px;
+  font-family: 'East Sea Dokdo', cursive;
+  text-align:left;
+  color:#111;
+  margin:20px 0;
+}
+section h3{
+  font-size:26px;
+  font-family:'Nanum Pen Script', cursive;
+  color:#333;
+  text-align:center;
+}
+
+/* 치킨메뉴 */
+#chicken{
+  width:1200px;
+  margin:40px auto 0;
+}
+#chicken ul li{
+  width:290px;
+  height:250px;
+  border:3px dashed #888;
+  border-radius:30px;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  box-sizing:border-box;
+  margin:5px;
+}
+#chicken ul li .chicken_bar{
+  width:100%;
+  height:0%;
+  position: absolute;
+  background-color:rgba(38, 20, 16, 0.7);
+  transition:all 0.5s;
+}
+#chicken ul li:hover .chicken_bar{
+  height:100%;
+}
+#chicken ul li .chicken_bar .chicken_menu{
+  font-family:'Nanum Pen Script', cursive;
+  font-size:36px;
+  line-height:250px;
+  opacity:0;
+  transition:all 0.3s;
+  color:#E4E9F2;
+}
+#chicken ul li:hover .chicken_bar .chicken_menu{
+  opacity:1;
+  cursor:pointer;
+}
+
+/* 수제 맥주 */
+#suje_beer{
+  background:#F2B705;
+  padding:40px 0;
+  margin-top:40px;
+}
+#suje_beer h3{width:300px;}
+#suje_beer .suje_beer_intro{
+  width:1200px;
+  margin:0 auto;
+}
+.suje_beer_imgbox ul{display:inline-block;}
+.suje_beer_imgbox ul li{
+  float:left;
+  width:250px;
+  margin:20px;
+  text-align:center;
+  position:relative;
+}
+.suje_beer_imgbox ul li .beer_text{
+  width:100%;
+  height:100%;
+  line-height:25px;
+  font-size:18px;
+  transform:scale(0,0);
+  opacity:0;
+  transition:all 0.8s;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+}
+.suje_beer_imgbox ul li:hover .beer_text{
+  transform:scale(1,1);
+  opacity:1;
+  background:rgba(216, 121, 4, 0.8);
+  color:#E4E9F2;
+  padding:0 20px;
+}
+
+/* 사이드 메뉴 */
+
+.side_menu_intro{
+  width:1200px;
+  margin:60px auto 0;
+}
+.side_nav ul{margin-left: 70px;}
+.side_nav ul li{
+  float:left;
+  margin-right:20px;
+  position:relative;
+  border:1px dashed #E4E9F2;
+}
+.side_nav ul li:nth-child(4){margin-right:0;}
+.side_nav ul li img{width:250px;}
+.side_nav ul li .sub_box{
+  width:250px;
+  height:0%;
+  transition:all 0.3s;
+  position:absolute;
+  background:rgba(216, 121, 4, 1);
+}
+.side_nav ul li:hover .sub_box{height:50px;}
+.side_nav ul li .sub_box p{
+  width:100%;
+  opacity:0;
+  text-align:center;
+  line-height:50px;
+  transition:all 0.3s;
+}
+.side_nav ul li:hover .sub_box p{
+  opacity:1;
+  color:aliceblue;
+  cursor:pointer;
+}
+#side_menu .sub_btn{
+  margin:0 auto;
+  text-align:center;
+  line-height:20px;
+  width:150px;
+  margin-top:50px;
+  padding:10px;
+  font-size:15px;
+  border-radius:20px;
+  background-color: #F2B705;
+  transition: all 0.3s;
+}
+.sub_btn .icon1{
+  vertical-align:bottom;
+  font-size:20px;
+}
+#side_menu .sub_btn:hover{background:rgba(140, 39, 16, 1);}
+#side_menu .sub_btn:hover a{color:#E4E9F2;}
+#side_menu .sub_btn:hover .icon{color:#E4E9F2;}
+
+/* 나만의 레시피 */
+#my_recipe{
+  width:100%;
+  background-color:#F2AE2E;
+  text-align:center;
+}
+#my_recipe .recipe_main{
+  width:1200px;
+  margin:60px auto 0;
+  padding:30px 0;
+}
+.recipe_main ul{}
+.recipe_main ul li{
+  float:left;
+  margin-right:10px;
+  overflow:hidden;
+}
+.recipe_main ul li img{
+  transition:all 0.5s;
+  filter:grayscale(90%);
+}
+.recipe_main ul li:hover img{
+  transform:scale(1.4);
+  filter:grayscale(0%);
+}
+.recipe_main ul li p{text-align:center;}
+.recipe_main ul li .recipe_inbox{overflow:hidden;}
+
+.recipe_inboxbt{
+  width:150px;
+  margin:30px auto 0;
+  border-radius:20px;
+  background:#E4E9F2;
+  text-align:center;
+  padding:10px;
+}
+.recipe_inboxbt p{
+  display:inline-block;
+  font-size:15px;
+  color:#333;
+  z-index:100;
+}
+.recipe_inboxbt .icon2{
+  vertical-align:bottom;
+  font-size:15px;
+}
+.recipe_inboxbt:hover{
+  background:#590212;
+  color:#E4E9F2;
+  cursor:pointer;
+}
+.recipe_inboxbt:hover .icon2{color:#E4E9F2;}
+
+/* 이벤트 */
+#event{
+  width:100%;
+  background:#d66a6a;
+  padding:20px 0;
+}
+#event h2{margin-bottom:50px;}
+.event_intro{
+  width:1200px;
+  margin:0 auto;
+}
+
+.event_intro ul{
+  text-align:center;
+}
+.event_intro ul li{
+  position:relative;
+  margin-bottom:20px;
+  z-index:100;
+  
+}
+.event_intro ul li img{
+  width:600px;
+  height:250px;
+  box-shadow: 3px 3px 15px #333;
+}
+
+.event_intro ul li .e-textbox{
+  display:inline-block;
+  width:350px;
+  height:250px;
+  border-radius:0 30px 30px 0;
+  position:absolute;
+  opacity:0;
+  left:75%;
+  text-align:center;
+  transition:all 0.5s;
+  z-index:5;
+}
+.event_intro ul li:hover .e-textbox{
+  opacity:1;
+  background:#E4E9F2;
+}
+.e-textbox h3{
+  line-height:80px;
+  font-size:25px;
+}
+.e-textbox .e-btn{
+  position: absolute;
+  left:48%;
+  bottom:15px;
+  background-color:#8e9bb3;
+  padding:10px;
+  border-radius:15px;
+}
+.e-textbox .e-btnf{
+  background-color:#F2AE2E;
+  position: absolute;
+  left:48%;
+  bottom:15px;
+  padding:10px;
+  border-radius:15px;
+  transition: all 0.4s;
+}
+.e-textbox .e-btn:hover{
+  cursor: pointer;
+  background-color: #d66a6a;
+}
+.e-textbox .e-btnf:hover{
+  cursor: pointer;
+  background-color: #d66a6a;
+}
+
+/* 가맹점 안내 */
+#info_shop{width:100%;}
+.info_intro{
+  width:1200px;
+  margin:0 auto;
+}
+.left_info{
+  float:left;
+  width:140px;
+  position:relative;
+}
+.left_info h3{
+  text-align:left;
+  line-height:10px;
+}
+.left_info p{margin-top:20px;}
+.info_btn{
+  border:1px solid #111;
+  text-align:center;
+  border-radius:10px;
+  position:absolute;
+  padding:5px;
+  margin-top:30px;
+  transition: all 0.3s;
+}
+.info_btn:hover{background-color: #590212;}
+.info_btn:hover a{
+  color: #E4E9F2;
+  font-weight:bold;
+}
+.right_InfoImg{float:right;}
+.right_InfoImg ul{}
+.right_InfoImg ul li{
+  float:left;
+  position:relative;
+  transition: all 0.5s;
+}
+.right_InfoImg ul li .InfoImg_intext{
+  position:absolute;
+  right:25%;
+  line-height:163px;
+  color:#E4E9F2;
+}
+.right_InfoImg ul li:hover{
+  transform:scale(1.4);
+  cursor: pointer;
+}
+
+/* footer______________________________________________ */
+footer{
+  width:100%;
+  background:rgba(140, 39, 16, 1);
+}
+.footer_all{
+  width:1200px;
+  margin:0 auto;
+  padding:30px 0; 
+}
+.footer_sub{padding:10px 0;   display:inline-block;}
+.footer_sub p{
+  border-left:1px solid #E4E9F2;
+  color: #E4E9F2;
+  padding:0 10px;
+  font-size:14px;
+  line-height:25px;
+}
+.footer_sub p:nth-child(1){border-left:0; padding-left:0;}
+.footer_sub p:nth-child(5){border-left:0; padding-left:0;}
+.footer_sub p:nth-child(10){border-left:0; padding-left:0;}
+
+.footer_sns{padding:10px 0; float:right;}
+.footer_sns ul li{
+  float:left;
+  margin-right:5px;
+}
+.footer_sns ul li a img{width:50px;}
+address{
+  clear:both;
+  text-align:center;
+  padding:10px 0;
+  font-size:16px;
+  font-style: normal;
+  font-weight:bold;
+  color: #E4E9F2;
+}
+/* Color Theme Swatches in RGBA */
+.맥주-잔-1-rgba { color: rgba(242, 159, 4, 1); }
+.맥주-잔-2-rgba { color: rgba(216, 121, 4, 1); }
+.맥주-잔-3-rgba { color: rgba(165, 130, 99, 1); }
+.맥주-잔-4-rgba { color: rgba(165, 69, 13, 1); }
+.맥주-잔-5-rgba { color: rgba(140, 39, 16, 1); }
+
